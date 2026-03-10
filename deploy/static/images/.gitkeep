@@ -1,0 +1,12 @@
+# Images Directory
+
+This directory is reserved for static assets such as:
+- Logos
+- Icons
+- Background images
+- Illustrations
+- Screenshots
+
+Currently using Font Awesome icons via CDN, so no image files are required for the basic functionality.
+
+You can add custom images here as needed.

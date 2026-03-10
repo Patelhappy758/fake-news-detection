@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+xgboost
+numpy
+pytesseract
+Pillow
+duckduckgo-search
+requests

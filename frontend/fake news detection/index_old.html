@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced fake news detection tool using AI-powered analysis">
+    <meta name="keywords" content="fake news, detection, verification, fact-checking">
+    <title>Fake News Detection | Truth Verified</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Truth<span class="logo-accent">Verify</span></span>
+                    </div>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active" data-section="home">
+                            <i class="fas fa-home"></i> Home
+                        </a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">
+                            <i class="fas fa-info-circle"></i> About
+                        </a></li>
+                        <li><a href="#detect" class="nav-link" data-section="detect">
+                            <i class="fas fa-search"></i> Detect
+                        </a></li>
+                        <li><a href="#chatbot" class="nav-link" data-section="chatbot">
+                            <i class="fas fa-robot"></i> Chatbot
+                        </a></li>
+                    </ul>
+                    
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active fade-in">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Detect Fake News with
+                                <span class="gradient-text">AI Precision</span>
+                            </h1>
+                            <p class="hero-description">
+                                Combat misinformation with our advanced AI-powered detection system. 
+                                Upload images or text to verify the authenticity of news content instantly.
+                            </p>
+                            <div class="hero-buttons">
+                                <button class="btn btn-primary" data-section="detect">
+                                    <i class="fas fa-search"></i> Start Detection
+                                </button>
+                                <button class="btn btn-secondary" data-section="about">
+                                    <i class="fas fa-play-circle"></i> Learn More
+                                </button>
+                            </div>
+                            
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Accuracy</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">1M+</div>
+                                    <div class="stat-label">Checks</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Available</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-image">
+                            <div class="hero-illustration">
+                                <i class="fas fa-newspaper hero-icon"></i>
+                                <div class="floating-icon icon-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="floating-icon icon-2">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="floating-icon icon-3">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI-Powered Analysis</h3>
+                            <p>Advanced machine learning algorithms analyze content patterns and credibility indicators.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Instant Results</h3>
+                            <p>Get real-time verification results in seconds with detailed confidence scores.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h3>Multi-Format Support</h3>
+                            <p>Upload text content or images of news articles for comprehensive analysis.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Smart Chatbot</h3>
+                            <p>Ask questions and get instant tips on identifying and verifying news sources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Truth<span class="gradient-text">Verify</span></h2>
+                    <p class="section-subtitle">Understanding Our Mission and Technology</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            In an era of information overload, distinguishing truth from fiction has become increasingly 
+                            challenging. TruthVerify was created to empower individuals with the tools they need to verify 
+                            news authenticity and combat the spread of misinformation. Our mission is to promote media 
+                            literacy and restore trust in credible journalism.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>How It Works</h3>
+                        <div class="how-it-works">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Upload Content</h4>
+                                    <p>Submit news text or upload screenshots of articles you want to verify.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>AI Analysis</h4>
+                                    <p>Our advanced algorithms analyze language patterns, source credibility, and fact consistency.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Get Results</h4>
+                                    <p>Receive instant verification results with confidence scores and detailed explanations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Our Technology</h3>
+                        <p>
+                            TruthVerify employs state-of-the-art natural language processing (NLP) and computer vision 
+                            technologies to analyze news content. Our system examines multiple factors including:
+                        </p>
+                        <ul class="tech-list">
+                            <li><i class="fas fa-check"></i> Linguistic patterns and writing style analysis</li>
+                            <li><i class="fas fa-check"></i> Source credibility and reputation assessment</li>
+                            <li><i class="fas fa-check"></i> Cross-reference with verified fact-checking databases</li>
+                            <li><i class="fas fa-check"></i> Image manipulation and deepfake detection</li>
+                            <li><i class="fas fa-check"></i> Emotional manipulation indicator identification</li>
+                            <li><i class="fas fa-check"></i> Clickbait and sensationalism detection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Privacy & Security</h3>
+                        <p>
+                            We take your privacy seriously. All content submitted for analysis is processed securely 
+                            and is not stored permanently on our servers. We do not share your data with third parties, 
+                            and all communications are encrypted. Your trust is our priority.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detect Section -->
+        <section id="detect" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Detect <span class="gradient-text">Fake News</span></h2>
+                    <p class="section-subtitle">Upload content to verify its authenticity</p>
+                </div>
+                
+                <div class="detect-container">
+                    <div class="upload-card">
+                        <div class="upload-toggle">
+                            <button class="toggle-btn active" data-mode="text">
+                                <i class="fas fa-file-alt"></i> Text
+                            </button>
+                            <button class="toggle-btn" data-mode="image">
+                                <i class="fas fa-image"></i> Image
+                            </button>
+                        </div>
+                        
+                        <!-- Text Upload Form -->
+                        <form id="textForm" class="upload-form active">
+                            <div class="form-group">
+                                <label for="textContent">
+                                    <i class="fas fa-pen"></i> Paste News Content
+                                </label>
+                                <textarea 
+                                    id="textContent" 
+                                    name="textContent" 
+                                    rows="10" 
+                                    placeholder="Paste the news article text here..."
+                                    required
+                                ></textarea>
+                                <div class="char-count">
+                                    <span id="charCount">0</span> characters
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-search"></i> Analyze Text
+                            </button>
+                        </form>
+                        
+                        <!-- Image Upload Form -->
+                        <form id="imageForm" class="upload-form">
+                            <div class="form-group">
+                                <label for="imageFile">
+                                    <i class="fas fa-upload"></i> Upload News Screenshot
+                                </label>
+                                <div class="file-upload-area" id="fileUploadArea">
+                                    <input 
+                                        type="file" 
+                                        id="imageFile" 
+                                        name="imageFile" 
+                                        accept="image/*"
+                                        required
+                                    >
+                                    <div class="file-upload-content">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <p>Drag & drop an image here or click to browse</p>
+                                        <span class="file-upload-hint">Supported formats: JPG, PNG, GIF (Max 5MB)</span>
+                                    </div>
+                                </div>
+                                <div id="imagePreview" class="image-preview"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-search"></i> Analyze Image
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Results Display -->
+                    <div class="results-card" id="resultsCard">
+                        <div class="results-header">
+                            <h3><i class="fas fa-chart-line"></i> Analysis Results</h3>
+                        </div>
+                        <div class="results-content" id="resultsContent">
+                            <div class="empty-state">
+                                <i class="fas fa-inbox"></i>
+                                <p>No analysis yet. Upload content to get started.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Loading Overlay -->
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="spinner"></div>
+                    <p>Analyzing content...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot Section -->
+        <section id="chatbot" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">AI <span class="gradient-text">Assistant</span></h2>
+                    <p class="section-subtitle">Ask questions about fake news detection</p>
+                </div>
+                
+                <div class="chatbot-container">
+                    <div class="chatbot-card">
+                        <div class="chatbot-header">
+                            <div class="chatbot-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="chatbot-info">
+                                <h3>TruthBot</h3>
+                                <span class="status-indicator">
+                                    <i class="fas fa-circle"></i> Online
+                                </span>
+                            </div>
+                            <button class="chatbot-clear" id="clearChat" title="Clear chat">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="chatbot-messages" id="chatMessages">
+                            <div class="message bot-message">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>Hello! I'm TruthBot, your fake news detection assistant. 👋</p>
+                                    <p>I can help you with:</p>
+                                    <ul>
+                                        <li>Tips on spotting fake news</li>
+                                        <li>How to verify sources</li>
+                                        <li>Understanding media bias</li>
+                                        <li>Fact-checking resources</li>
+                                    </ul>
+                                    <p>Type "help" for a list of commands or ask me anything!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form class="chatbot-input" id="chatForm">
+                            <input 
+                                type="text" 
+                                id="chatInput" 
+                                placeholder="Type your question here..."
+                                autocomplete="off"
+                                required
+                            >
+                            <button type="submit" class="btn-send">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="chatbot-tips">
+                        <h3><i class="fas fa-lightbulb"></i> Quick Tips</h3>
+                        <div class="tip-card">
+                            <h4>Check the Source</h4>
+                            <p>Verify the credibility and reputation of the news source. Look for established, reputable outlets.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Examine the Author</h4>
+                            <p>Research the author's credentials and previous work. Are they an expert in the field?</p>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Look for Citations</h4>
+                            <p>Credible articles cite sources and reference studies. Verify these references independently.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Check the Date</h4>
+                            <p>Ensure the information is current and hasn't been taken out of temporal context.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Cross-Reference</h4>
+                            <p>Verify the story with multiple reputable sources. Consensus among credible outlets is key.</p>
+                        </div>
+                        <div class="tip-card">
+                            <h4>Watch for Bias</h4>
+                            <p>Be aware of emotional language, sensationalism, or one-sided perspectives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Truth<span class="logo-accent">Verify</span></span>
+                    </div>
+                    <p>Empowering truth in the digital age through advanced AI-powered fake news detection.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#detect">Detect</a></li>
+                        <li><a href="#chatbot">Chatbot</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Access</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TruthVerify. All rights reserved. | Built with ❤️ for a more informed world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
